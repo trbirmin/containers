@@ -1,4 +1,2 @@
-FROM httpd:bullseye
-#RUN apt install python3
-COPY . /usr/local/apache2/htdocs/
-#ENTRYPOINT [ "http" ]
+FROM php:7.4-apache
+COPY . /var/www/html
