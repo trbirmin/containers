@@ -1,0 +1,12 @@
+services:
+  myapi:
+    image: ftbt-api
+  myweb:
+    image: ftbt
+    ports:
+      - "80:80"
+    environment:
+      - CUSTOM__VALUE=mysecret
+      - CUSTOM__APIURL=http://myapi
+    depends_on:
+      - myapi
