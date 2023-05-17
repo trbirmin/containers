@@ -8,5 +8,9 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
     <p>@Model.Value</p>
+
+    <!-- Ways to link a razor page -->
     <p><a href="/detail"> view this week's weather</a></p>
+    <p><a asp-page="/detail"> View this week's weather</a></p>
+    @Html.ActionLink("View this week's weather", "Detail")
 </div>

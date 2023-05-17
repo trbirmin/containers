@@ -1,6 +1,6 @@
 services:
   myapi:
-    image: ftbt-api
+    image: ftbt-api:v4.0
   myweb:
     image: ftbt
     ports:
